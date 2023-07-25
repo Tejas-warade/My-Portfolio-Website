@@ -1,2 +1,2 @@
 # My-Portfolio-Website
-This is my portfolio website which desribes my skills I gained and projects I made using them. 
+This is my portfolio website which describes my skills I gained and the projects I made using them.
