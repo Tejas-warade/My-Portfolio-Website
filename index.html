@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <section>
+      <header>
+        <div class="logo">
+          <a href="#"><span>P</span>ortfolio</a>
+        </div>
+
+        <div class="nav-menu">
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Tech Stack</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class='bx bx-x' onclick="closeMenu()"></i>
+          </ul>
+          <i class='bx bx-menu' onclick="openMenu()"></i>
+        </div>
+      </header>
+    </section>
+
+    <!-- home -->
+    <section class="home" id="home">
+      <div class="header-bottom">
+        <div class="bottom-left">
+          <h2 class="hello">Hello, It's me</h2>
+          <h1 class="name">Tejas Warade</h1>
+          <h3 class="profession">And I'm a <span class="auto-type"></span></h3>
+          <p class="short-desc">
+            I'm skilled C++ Programmer and Frontend Developer. I'm very
+            passionate and dedicated to my work.
+          </p>
+          <a href="Tejas_Warade_Resume.pdf" download="Tejas_Warade_Resume.pdf" class="btn-cv">Download CV</a>
+          
+        </div>
+        <div class="profile">
+          <img src="img/profile-pic__4_-removebg-preview.png" />
+        </div>
+        <div class="bottom-right">
+          <a href="https://github.com/Tejas-warade"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/tejas-warade-583741215/"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+          <a href="https://www.instagram.com/_tejas_warade_/"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://twitter.com/TejasWarade1"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+      <div class="about-left">
+        <img src="img/about.png" alt="user-sideimg" />
+      </div>
+      <div class="about-right">
+        <div class="section-title">
+          <h2 class="sub-title">About Me</h2>
+          <h3 class="title">Web Developer</h3>
+        </div>
+        <p class="desc">
+          As a good computer programmer, I bring a wealth of technical expertise
+          and a strong passion for coding to any project I undertake. With a
+          solid foundation in various programming languages and frameworks, I
+          have successfully developed and deployed complex software
+          applications, solving challenging problems with innovative solutions.
+          My attention to detail, analytical mindset, and ability to work
+          collaboratively make me a valuable asset to any development team.
+        </p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="openTab('skills')">
+            Skills
+          </p>
+          <p class="tab-links" onclick="openTab('experience')">Experience</p>
+          <p class="tab-links" onclick="openTab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>C++</span><br />Problem Solving, OOPS & DSA</li>
+            <li>
+              <span>HTML-CSS-JS</span><br />Designing and Frontend Development
+            </li>
+            <li>
+              <span>Python</span><br />Machine Learning and Flask App Deployment
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li>
+              <span>Jun 2023 - July 2023</span><br />
+              Intern Developer at Ibase Electrosoft LLP, Amravati
+            </li>
+            <li>
+              <span>Jun 2023 - Aug 2023</span><br />Completed web development
+              training at Internshala
+            </li>
+            <li>
+              <span>Aug 2022 - Oct 2022</span><br />Semifinalist in VOIS
+              Hackathon
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li>
+              <span>2021 - 2024</span><br />B.Tech in EXTC at SGGSIE&T, Nanded
+            </li>
+            <li>
+              <span>2019 - 2020</span><br />HSC from C.S.K Junior College,
+              Nandura
+            </li>
+            <li>
+              <span>2017-2018</span><br />SSC from C.S.K High School, Nandura
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service section -->
+    <section id="service">
+      <div class="section-title">
+        <h2 class="sub-title">My Tech Stack</h2>
+        <h3 class="title">Technologies I worked on</h3>
+      </div>
+      <div class="services">
+        <div>
+          <i class="bx bx-code-block"></i>
+          <h2>C++ and DSA</h2>
+          <p>Wrote efficient and optimized computer programs</p>
+        </div>
+        <div>
+          <i class="bx bx-laptop"></i>
+          <h2>Web Development</h2>
+          <p>
+            Created different projects in which designed a full responsive
+            website
+          </p>
+        </div>
+        <div>
+          <i class="bx bxl-netlify"></i>
+          <h2>Machine Learning</h2>
+          <p>
+            Created projects- Rainfall Prediction and Movie Recommendation
+            System
+          </p>
+        </div>
+        <div>
+          <i class="bx bxs-data"></i>
+          <h2>Databases</h2>
+          <p>
+            Worked on Databases using mySQL and learned about management of
+            data.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio section -->
+    <section id="portfolio">
+      <div class="section-title">
+        <h2 class="sub-title">My Portfolio</h2>
+        <h3 class="title">Awesome Works</h3>
+        <div class="project-list">
+          <div class="project" id="project1">
+            <img src="img/Rainfall Prediction.png" alt="project1" />
+            <div class="layer">
+              <h3>Rainfall Prediction</h3>
+              <p>
+                Developed a machine learning model using the CatBoost classifier
+                to accurately predict rainfall probability based on historical
+                weather data, with an accuracy of 86% and also deployed a web
+                app using Flask.
+              </p>
+              <a href="https://github.com/Tejas-warade/Rainfall-Prediction"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="img/News Flex.png" alt="project2" />
+            <div class="layer">
+              <h3>News App</h3>
+              <p>
+                A user-centric News App that uses HTML and CSS for a visually
+                appealing design and JavaScript for API calls to deliver
+                personalized news content based on user preferences and
+                interests across the globe.
+              </p>
+              <a href="https://github.com/Tejas-warade/News-App"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="img/Movie Night.png" alt="project3" />
+            <div class="layer">
+              <h3>Movie Recommendation System</h3>
+              <p>
+                A Movie Recommendation System which suggests movies to users
+                based on their preferences. It uses cosine similarity algorithm
+                to analyze user data and movie characteristics, to provide
+                suggestions.
+              </p>
+              <a
+                href="https://github.com/Tejas-warade/Movie-Recommendation-System"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">
+        <h2 class="sub-title">Contact</h2>
+        <h3 class="title">Get in Touch</h3>
+      </div>
+      <div class="content">
+        <div class="contact-left">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" id="name" placeholder="Your Name" required />
+            <input
+              id="email"
+              type="email"
+              name="Email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Message"
+              id="message"
+            ></textarea>
+            <button type="submit" class="submit-btn" >
+              <div>Send Message</div>
+              <div>
+                <i class="arrow bx bxs-right-arrow-alt"></i>
+              </div>
+            </button>
+          </form>
+        </div>
+        <div class="vl"></div>
+        <div class="contact-right">
+          <div class="col address">
+            <i class="bx bx-map"></i>
+            <div class="info">
+              <h2 class="title">Address</h2>
+              <p>SGGSIE&T Nanded, Maharashtra</p>
+            </div>
+          </div>
+          <div class="col email">
+            <i class="bx bxs-envelope"></i>
+            <div class="info">
+              <h2 class="title">Email</h2>
+              <p>usertejaz@gmail.com</p>
+            </div>
+          </div>
+          <div class="col website">
+            <i class="bx bxl-linkedin-square"></i>
+            <div class="info">
+              <h2 class="title">LinkedIn</h2>
+              <p>Tejas Warade</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Made with <i class="bx bxs-heart"></i> by
+          <a href="https://github.com/Tejas-warade">Tejas</a>
+        </p>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
